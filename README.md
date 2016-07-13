@@ -1,1 +1,3 @@
 # MEP
+Dependencies:
+ - Collection Utils
