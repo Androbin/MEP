@@ -1,6 +1,5 @@
 package de.androbin.mep;
 
-import static de.androbin.gfx.SystemGraphics.*;
 import de.androbin.mep.term.*;
 import java.math.*;
 import javax.swing.*;
@@ -16,7 +15,6 @@ public final class Test
 	
 	public static void main( final String[] args )
 	{
-		setSystemLookAndFeel();
 		setStandardConstants();
 		
 		while ( query( CONTEXT ) )
