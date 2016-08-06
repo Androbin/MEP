@@ -19,7 +19,7 @@ public final class TermFactory
 	
 	public static Term random( final int depth, final int max, final Random random )
 	{
-		final List<Term> terms = new GapList<Term>();
+		final List<Term> terms = new ArrayList<Term>();
 		
 		{
 			final int n = random.nextInt( ( 1 << depth ) - 1 ) + 1;
