@@ -5,7 +5,6 @@ import de.androbin.mep.term.*;
 import de.androbin.mep.term.basic.*;
 import de.androbin.mep.term.binary.*;
 import java.util.function.*;
-import jdk.nashorn.internal.objects.annotations.*;
 
 public enum Token
 {
@@ -32,7 +31,6 @@ public enum Token
 		this.instantiator = instantiator;
 	}
 	
-	@ Getter
 	public static Token get( final char op )
 	{
 		for ( final Token token : values() )

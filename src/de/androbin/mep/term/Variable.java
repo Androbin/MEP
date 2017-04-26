@@ -2,14 +2,13 @@ package de.androbin.mep.term;
 
 import java.math.*;
 import java.util.*;
-import jdk.nashorn.internal.objects.annotations.*;
 
 public final class Variable implements Term
 {
-	private static final Map<String, BigDecimal> values	= new HashMap<String, BigDecimal>();
-														
-	private final String						 name;
-												 
+	private static final Map<String, BigDecimal>	VALUES	= new HashMap<String, BigDecimal>();
+	
+	private final String							name;
+	
 	public Variable( final String name )
 	{
 		this( name, BigDecimal.ZERO );
@@ -24,25 +23,22 @@ public final class Variable implements Term
 	@ Override
 	public BigDecimal evaluate( final MathContext context )
 	{
-		return values.get( name );
+		return VALUES.get( name );
 	}
 	
-	@ Getter
 	public static BigDecimal get( final String name )
 	{
-		return values.getOrDefault( name.toLowerCase(), BigDecimal.ZERO );
+		return VALUES.getOrDefault( name.toLowerCase(), BigDecimal.ZERO );
 	}
 	
-	@ Getter
 	public String getName()
 	{
 		return name;
 	}
 	
-	@ Setter
 	public static void set( final String name, final BigDecimal value )
 	{
-		values.put( name.toLowerCase(), value );
+		VALUES.put( name.toLowerCase(), value );
 	}
 	
 	@ Override

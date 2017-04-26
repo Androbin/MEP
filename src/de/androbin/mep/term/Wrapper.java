@@ -1,7 +1,6 @@
 package de.androbin.mep.term;
 
 import java.math.*;
-import jdk.nashorn.internal.objects.annotations.*;
 
 public final class Wrapper implements Term
 {
@@ -18,13 +17,11 @@ public final class Wrapper implements Term
 		return getNumber();
 	}
 	
-	@ Getter
 	public BigDecimal getNumber()
 	{
 		return number;
 	}
 	
-	@ Setter
 	public void setNumber( final BigDecimal number )
 	{
 		this.number = number;

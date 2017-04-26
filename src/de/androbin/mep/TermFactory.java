@@ -4,7 +4,6 @@ import de.androbin.mep.term.*;
 import java.math.*;
 import java.util.*;
 import java.util.concurrent.*;
-import org.magicwerk.brownies.collections.*;
 
 public final class TermFactory
 {
