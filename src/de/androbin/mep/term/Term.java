@@ -4,7 +4,7 @@ import de.androbin.mep.*;
 import java.math.*;
 
 public interface Term {
-  BigDecimal evaluate( final MathContext context );
+  BigDecimal evaluate( MathContext context );
   
   default Token getToken() {
     return Token.TERM;

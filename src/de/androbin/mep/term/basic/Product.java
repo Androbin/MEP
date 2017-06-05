@@ -19,8 +19,8 @@ public final class Product extends BiOperation {
   }
   
   @ Override
-  public BigDecimal evaluate( final MathContext context, final BigDecimal first,
-      final BigDecimal second ) {
+  public BigDecimal evaluate( final MathContext context,
+      final BigDecimal first, final BigDecimal second ) {
     return first.multiply( second, context );
   }
 }

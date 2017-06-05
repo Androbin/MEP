@@ -20,8 +20,7 @@ public abstract class BiOperation implements Term {
     return evaluate( context, getFirst().evaluate( context ), getSecond().evaluate( context ) );
   }
   
-  public abstract BigDecimal evaluate( final MathContext context, final BigDecimal first,
-      final BigDecimal second );
+  public abstract BigDecimal evaluate( MathContext context, BigDecimal first, BigDecimal second );
   
   public Term getFirst() {
     return first;
