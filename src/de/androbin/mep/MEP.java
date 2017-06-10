@@ -22,8 +22,8 @@ public final class MEP {
   }
   
   public static Term parseTerm( final MathContext context, final String expression ) {
-    final List<Token> tokens = new ArrayList<Token>();
-    final List<Term> terms = new ArrayList<Term>();
+    final List<Token> tokens = new ArrayList<>();
+    final List<Term> terms = new ArrayList<>();
     
     if ( testForBrackets( expression ) ) {
       String e = expression;

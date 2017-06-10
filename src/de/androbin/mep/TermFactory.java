@@ -14,7 +14,7 @@ public final class TermFactory {
   }
   
   public static Term random( final int depth, final int max, final Random random ) {
-    final List<Term> terms = new ArrayList<Term>();
+    final List<Term> terms = new ArrayList<>();
     
     {
       final int n = random.nextInt( ( 1 << depth ) - 1 ) + 1;
